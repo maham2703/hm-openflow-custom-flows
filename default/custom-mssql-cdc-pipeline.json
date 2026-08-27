@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1787853184756,
+    "description" : "Custom CDC flow bypassing packaged connector hang — Clinic table pipeline, configuration complete, validation pending",
+    "identifier" : "custom-mssql-cdc-pipeline",
+    "lastModifiedTimestamp" : 1787853184756,
+    "name" : "custom-mssql-cdc-pipeline",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
