@@ -36,6 +36,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "8787b7a0-e514-3ffc-ae99-307765f1d602",
+        "name" : "PutDatabaseRecord",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "10bfb174-b40c-3fe6-8e08-de119491e38b",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "845914ed-7ea6-3ef6-bcc3-a022e648ca3d",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 7
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "845914ed-7ea6-3ef6-bcc3-a022e648ca3d",
         "name" : "UpdateAttribute",
         "type" : "PROCESSOR"
@@ -66,66 +96,6 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "9958eadd-b2bd-3142-b21c-cf224c9a0d92",
-        "name" : "LogAttribute",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "36a59a35-a763-37e2-94fe-f900f579d1ac",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "failure" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "5f34475c-6493-3441-9123-a945aec80396",
-        "name" : "PutDatabaseRecord",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 4
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "5f34475c-6493-3441-9123-a945aec80396",
-        "name" : "PutDatabaseRecord",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "53d98af5-6deb-39de-85ea-b37db184e84d",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "success" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "845914ed-7ea6-3ef6-bcc3-a022e648ca3d",
-        "name" : "UpdateAttribute",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 3
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
         "id" : "a11230eb-75fe-3235-8fc8-3fe580e478b7",
         "name" : "ExecuteSQLRecord",
         "type" : "PROCESSOR"
@@ -148,6 +118,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 5
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "9958eadd-b2bd-3142-b21c-cf224c9a0d92",
+        "name" : "LogAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "fa2e0b72-9706-3f7a-9906-4aa1172fafb5",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "8787b7a0-e514-3ffc-ae99-307765f1d602",
+        "name" : "PutDatabaseRecord",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 8
     } ],
     "controllerServices" : [ ],
     "defaultBackPressureDataSizeThreshold" : "1 GB",
@@ -193,7 +193,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.8.25.11"
+        "version" : "2026.9.1.15"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -209,13 +209,12 @@
         "y" : -240.0
       },
       "properties" : {
-        "Table Name" : "cdc.dbo_Clinic_CT",
+        "Table Name" : "dbo.vw_Clinic_CT",
         "Max Wait Time" : "30 seconds",
         "Partition Size" : "0",
         "Database Connection Pooling Service" : "5bf813c8-5e48-3ccf-a7f6-62c4d340e194",
         "Database Type" : "Generic",
-        "Columns to Return" : "[__$start_lsn] AS start_lsn, [__$seqval] AS seq_val, [__$operation] AS operation, [__$update_mask] AS update_mask, clinic_id, clinic_name, address, city, state, zip, region, phone",
-        "Maximum-value Columns" : "__$start_lsn",
+        "Maximum-value Columns" : "start_lsn",
         "Output Empty FlowFile on Zero Results" : "false"
       },
       "propertyDescriptors" : {
@@ -314,26 +313,99 @@
       "type" : "org.apache.nifi.processors.standard.GenerateTableFetch",
       "yieldDuration" : "1 sec"
     }, {
-      "autoTerminatedRelationships" : [ "retry", "success" ],
+      "autoTerminatedRelationships" : [ ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
       "bundle" : {
-        "artifact" : "nifi-standard-nar",
+        "artifact" : "nifi-update-attribute-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.8.25.11"
+        "version" : "2026.9.1.15"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
       "groupIdentifier" : "flow-contents-group",
-      "identifier" : "5f34475c-6493-3441-9123-a945aec80396",
+      "identifier" : "845914ed-7ea6-3ef6-bcc3-a022e648ca3d",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 104.0,
+        "y" : 432.0
+      },
+      "properties" : {
+        "source.table" : "Clinic",
+        "Store State" : "Do not store state",
+        "Cache Value Lookup Cache Size" : "100"
+      },
+      "propertyDescriptors" : {
+        "source.table" : {
+          "displayName" : "source.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "source.table",
+          "sensitive" : false
+        },
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "Cache Value Lookup Cache Size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Cache Value Lookup Cache Size",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "retry", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2026.9.1.15"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "8787b7a0-e514-3ffc-ae99-307765f1d602",
       "maxBackoffPeriod" : "10 mins",
       "name" : "PutDatabaseRecord",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 96.0,
-        "y" : 928.0
+        "x" : 24.0,
+        "y" : 960.0
       },
       "properties" : {
         "Table Name" : "CLINIC_JOURNAL",
@@ -347,12 +419,12 @@
         "Unmatched Field Behavior" : "Ignore Unmatched Fields",
         "Database Name" : "DB_OPENFLOW",
         "Allow Multiple SQL Statements" : "false",
-        "Rollback On Failure" : "true",
+        "Rollback On Failure" : "false",
         "Column Name Translation Strategy" : "REMOVE_UNDERSCORE",
         "Binary String Format" : "UTF-8",
         "Unmatched Column Behavior" : "Fail on Unmatched Columns",
         "Database Type" : "Generic",
-        "Translate Field Names" : "false",
+        "Translate Field Names" : "true",
         "Statement Type" : "INSERT",
         "Table Schema Cache Size" : "100",
         "Maximum Batch Size" : "1000"
@@ -572,86 +644,13 @@
       "type" : "org.apache.nifi.processors.standard.PutDatabaseRecord",
       "yieldDuration" : "1 sec"
     }, {
-      "autoTerminatedRelationships" : [ ],
-      "backoffMechanism" : "PENALIZE_FLOWFILE",
-      "bulletinLevel" : "WARN",
-      "bundle" : {
-        "artifact" : "nifi-update-attribute-nar",
-        "group" : "org.apache.nifi",
-        "version" : "2026.8.25.11"
-      },
-      "comments" : "",
-      "componentType" : "PROCESSOR",
-      "concurrentlySchedulableTaskCount" : 1,
-      "executionNode" : "ALL",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "845914ed-7ea6-3ef6-bcc3-a022e648ca3d",
-      "maxBackoffPeriod" : "10 mins",
-      "name" : "UpdateAttribute",
-      "penaltyDuration" : "30 sec",
-      "position" : {
-        "x" : 104.0,
-        "y" : 432.0
-      },
-      "properties" : {
-        "source.table" : "Clinic",
-        "Store State" : "Do not store state",
-        "Cache Value Lookup Cache Size" : "100"
-      },
-      "propertyDescriptors" : {
-        "source.table" : {
-          "displayName" : "source.table",
-          "dynamic" : true,
-          "identifiesControllerService" : false,
-          "name" : "source.table",
-          "sensitive" : false
-        },
-        "Delete Attributes Expression" : {
-          "displayName" : "Delete Attributes Expression",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Delete Attributes Expression",
-          "sensitive" : false
-        },
-        "Store State" : {
-          "displayName" : "Store State",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Store State",
-          "sensitive" : false
-        },
-        "Cache Value Lookup Cache Size" : {
-          "displayName" : "Cache Value Lookup Cache Size",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Cache Value Lookup Cache Size",
-          "sensitive" : false
-        },
-        "Stateful Variables Initial Value" : {
-          "displayName" : "Stateful Variables Initial Value",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Stateful Variables Initial Value",
-          "sensitive" : false
-        }
-      },
-      "retriedRelationships" : [ ],
-      "retryCount" : 10,
-      "runDurationMillis" : 25,
-      "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "0 sec",
-      "schedulingStrategy" : "TIMER_DRIVEN",
-      "style" : { },
-      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
-      "yieldDuration" : "1 sec"
-    }, {
       "autoTerminatedRelationships" : [ "success" ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.8.25.11"
+        "version" : "2026.9.1.15"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -763,7 +762,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.8.25.11"
+        "version" : "2026.9.1.15"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -907,7 +906,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.8.25.11"
+        "version" : "2026.9.1.15"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1003,6 +1002,6 @@
   "snapshotMetadata" : {
     "author" : "MAHAM_HM_OPENFLOW_USER",
     "flowIdentifier" : "custom-mssql-cdc-pipeline",
-    "timestamp" : 1788332467394
+    "timestamp" : 1788367520763
   }
 }
