@@ -899,97 +899,6 @@
       "style" : { },
       "type" : "org.apache.nifi.processors.standard.ExecuteSQLRecord",
       "yieldDuration" : "1 sec"
-    }, {
-      "autoTerminatedRelationships" : [ "failure" ],
-      "backoffMechanism" : "PENALIZE_FLOWFILE",
-      "bulletinLevel" : "WARN",
-      "bundle" : {
-        "artifact" : "nifi-standard-nar",
-        "group" : "org.apache.nifi",
-        "version" : "2026.9.1.15"
-      },
-      "comments" : "",
-      "componentType" : "PROCESSOR",
-      "concurrentlySchedulableTaskCount" : 1,
-      "executionNode" : "ALL",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "d713d591-4a6e-3ee2-95cb-d6754a7707f5",
-      "maxBackoffPeriod" : "10 mins",
-      "name" : "UpdateRecord",
-      "penaltyDuration" : "30 sec",
-      "position" : {
-        "x" : 864.0,
-        "y" : 328.0
-      },
-      "properties" : {
-        "/seq_val" : "/__$seqval",
-        "/update_mask" : "/__$update_mask",
-        "Record Writer" : "ca981997-f8a1-377d-be11-9e92fab9671d",
-        "Record Reader" : "8d8fb4ae-bba4-3568-977d-94d4cf25e078",
-        "/start_lsn" : "/__$start_lsn",
-        "/operation" : "/__$operation",
-        "Replacement Value Strategy" : "record-path-value"
-      },
-      "propertyDescriptors" : {
-        "/seq_val" : {
-          "displayName" : "/seq_val",
-          "dynamic" : true,
-          "identifiesControllerService" : false,
-          "name" : "/seq_val",
-          "sensitive" : false
-        },
-        "/update_mask" : {
-          "displayName" : "/update_mask",
-          "dynamic" : true,
-          "identifiesControllerService" : false,
-          "name" : "/update_mask",
-          "sensitive" : false
-        },
-        "Record Writer" : {
-          "displayName" : "Record Writer",
-          "dynamic" : false,
-          "identifiesControllerService" : true,
-          "name" : "Record Writer",
-          "sensitive" : false
-        },
-        "Record Reader" : {
-          "displayName" : "Record Reader",
-          "dynamic" : false,
-          "identifiesControllerService" : true,
-          "name" : "Record Reader",
-          "sensitive" : false
-        },
-        "/start_lsn" : {
-          "displayName" : "/start_lsn",
-          "dynamic" : true,
-          "identifiesControllerService" : false,
-          "name" : "/start_lsn",
-          "sensitive" : false
-        },
-        "/operation" : {
-          "displayName" : "/operation",
-          "dynamic" : true,
-          "identifiesControllerService" : false,
-          "name" : "/operation",
-          "sensitive" : false
-        },
-        "Replacement Value Strategy" : {
-          "displayName" : "Replacement Value Strategy",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Replacement Value Strategy",
-          "sensitive" : false
-        }
-      },
-      "retriedRelationships" : [ ],
-      "retryCount" : 10,
-      "runDurationMillis" : 0,
-      "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "0 sec",
-      "schedulingStrategy" : "TIMER_DRIVEN",
-      "style" : { },
-      "type" : "org.apache.nifi.processors.standard.UpdateRecord",
-      "yieldDuration" : "1 sec"
     } ],
     "remoteProcessGroups" : [ ],
     "scheduledState" : "ENABLED",
@@ -1002,6 +911,6 @@
   "snapshotMetadata" : {
     "author" : "MAHAM_HM_OPENFLOW_USER",
     "flowIdentifier" : "custom-mssql-cdc-pipeline",
-    "timestamp" : 1788367520763
+    "timestamp" : 1788374135485
   }
 }
